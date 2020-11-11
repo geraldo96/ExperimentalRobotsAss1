@@ -1,0 +1,7 @@
+<launch>
+
+	<node name="command_transmiter" pkg="command_transmiter" type="publisher.py" />
+	<node name="fsm" pkg="fsm_receiver" type="subscriber.py" output ="screen"/>
+	<node name="position_receiver" pkg="position_receiver" type="position_rec_listener.py" />
+
+</launch>
